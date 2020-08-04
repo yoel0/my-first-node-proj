@@ -39,3 +39,8 @@ const moment = require("moment");
 console.log(
   moment("10-08-1991").format("dddd [the] Do [of] MMMM [in the year] YYYY")
 );
+
+const chalk = require("chalk");
+
+// console.log(chalk.blue("Hello world!"));
+console.log(chalk.red("Hello", chalk.underline.bgBlue("world") + "!"));
